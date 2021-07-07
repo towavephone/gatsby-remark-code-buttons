@@ -7,7 +7,7 @@ of [MDX copy button](https://github.com/gatsbyjs/gatsby/pull/15834).
 ## Install
 
 ```bash
-npm install gatsby-remark-code-buttons --save-dev
+npm install gatsby-remark-code-buttons-towavephone --save-dev
 ```
 
 ![](https://media.giphy.com/media/hoHRea4IdkDBrsE4Bu/source.gif)
