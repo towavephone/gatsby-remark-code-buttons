@@ -7,19 +7,9 @@ exports.onClientEntry = () => {
     el.innerHTML = str;
     document.body.appendChild(el);
 
-    const range = document.createRange();
-    range.selectNode(el);
-    window.getSelection().removeAllRanges();
-    window.getSelection().addRange(range);
-
-    document.execCommand(`copy`);
-    document.activeElement.blur();
-
-    setTimeout(() => {
-      document.getSelection().removeAllRanges();
-      document.body.removeChild(el);
-    }, 100);
-
+    el.select();
+    document.execCommand("copy");
+    document.body.removeChild(el);
     if (toasterId) {
       window.showClipboardToaster(toasterId);
     }
