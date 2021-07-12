@@ -1,4 +1,4 @@
-# gatsby-remark-code-buttons
+# gatsby-remark-code-buttons-towavephone
 
 Add buttons to **markdown** code snippets. 
 
@@ -21,7 +21,7 @@ plugins: [
   {
     resolve: 'gatsby-transformer-remark',
     options: {
-      plugins: ['gatsby-remark-code-buttons']
+      plugins: ['gatsby-remark-code-buttons-towavephone']
     }
   }
 ]
@@ -36,7 +36,7 @@ plugins: [
     options: {
       plugins: [
         {
-          resolve: 'gatsby-remark-code-buttons',
+          resolve: 'gatsby-remark-code-buttons-towavephone',
           options: {
             // Optional button container class name. Defaults
             // to 'gatsby-code-button-container'.

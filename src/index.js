@@ -21,10 +21,6 @@ module.exports = function gatsbyRemarkCodeButtons(
     const actions = qs.parse(params);
     const { clipboard } = actions;
 
-    if (!language) {
-      return;
-    }
-
     if (clipboard === 'false') {
       delete actions['clipboard'];
     } else {
@@ -57,12 +53,12 @@ module.exports = function gatsbyRemarkCodeButtons(
             >
               <div
                 class="${buttonClass}"
-                data-tooltip="${tooltipText}"
+                ${tooltipText ? `data-tooltip="${tooltipText}"` : ''}
               >
-                ${buttonText}${svgIcon}
+                ${[language, buttonText || svgIcon].filter((item) => item).join(' ')}
               </div>
             </div>
-            `.trim()
+          `.trim()
       };
 
       parent.children.splice(index, 0, buttonNode);

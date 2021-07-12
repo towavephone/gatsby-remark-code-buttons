@@ -1,6 +1,6 @@
 {
   "name": "gatsby-remark-code-buttons-towavephone",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "Add copy buttons to code snippets",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com:towavephone/gatsby-remark-code-buttons.git"
+    "url": "git+https://github.com/towavephone/gatsby-remark-code-buttons.git"
   },
   "keywords": [
     "gatsby",
