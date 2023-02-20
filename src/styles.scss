@@ -29,10 +29,16 @@
   }
 
   .gatsby-code-button-language {
-    width: 120px;
+    max-width: 120px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .gatsby-code-button-text-icon {
+    vertical-align: middle;
   }
 
   &[data-tooltip] {
