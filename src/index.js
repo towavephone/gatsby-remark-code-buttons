@@ -53,9 +53,10 @@ module.exports = function gatsbyRemarkCodeButtons(
             >
               <div
                 class="${buttonClass}"
-                ${tooltipText ? `data-tooltip="${tooltipText}"` : ''}
+                ${tooltipText ? `data-tooltip="${tooltipText}"` : `title="${language}"`}
               >
-                ${[language, buttonText || svgIcon].filter((item) => item).join(' ')}
+			  	${language ? `<span class="gatsby-code-button-language">${language}</span>` : ''}
+				${buttonText || svgIcon ? `<span class="class="gatsby-code-button-text-icon">${buttonText || svgIcon}</span>` : ''}
               </div>
             </div>
           `.trim()

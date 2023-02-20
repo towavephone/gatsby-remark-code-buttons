@@ -28,6 +28,13 @@
     white-space: nowrap;
   }
 
+  .gatsby-code-button-language {
+	width: 120px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
   &[data-tooltip] {
     &:after {
       top: 26px;
